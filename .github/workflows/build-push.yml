@@ -79,7 +79,7 @@ jobs:
         env:
           NEW_TAG: ${{ github.sha }}
         run: |
-          FILE="infra/terraform/terraform.tfvars"
+          FILE="./terraform.tfvars"
           echo "Updating image_tag to $NEW_TAG"
 
           if grep -q '^image_tag' "$FILE"; then

@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'appcode/**'
-      - '.github/workflows/build-push.yml'
+      - '.github/workflows/build-and-push.yml'
   workflow_dispatch: {}
 
 permissions:

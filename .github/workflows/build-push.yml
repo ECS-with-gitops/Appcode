@@ -16,6 +16,7 @@ env:
   AWS_REGION: us-east-1
   ECR_REPO_NAME: gitops-app
   INFRA_REPO: ${{ secrets.INFRA_REPO }} # e.g. your-org/infra-gitops-repo
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build-push:

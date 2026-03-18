@@ -57,7 +57,7 @@ jobs:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          cd appcode
+          ls -la
           docker build -t $ECR_REGISTRY/$ECR_REPO_NAME:$IMAGE_TAG .
           docker tag $ECR_REGISTRY/$ECR_REPO_NAME:$IMAGE_TAG $ECR_REGISTRY/$ECR_REPO_NAME:latest
           docker push $ECR_REGISTRY/$ECR_REPO_NAME:$IMAGE_TAG

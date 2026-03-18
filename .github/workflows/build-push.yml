@@ -99,3 +99,5 @@ jobs:
           body: |
             Auto-generated PR to update image tag to `${{ github.sha }}`.
             Image: `${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPO_NAME }}:${{ github.sha }}`
+
+            #testing the commit
